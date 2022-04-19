@@ -46,4 +46,4 @@ public class LapComplete : MonoBehaviour
 		LapCompleteTrig.SetActive(false);
 	}
 
-}
+} 
