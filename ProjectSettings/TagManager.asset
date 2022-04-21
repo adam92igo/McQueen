@@ -4,8 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Fire
-  - Bullet
+  - DreamCar01
+  - Dreamcar01
   layers:
   - Default
   - TransparentFX
