@@ -11,6 +11,7 @@ public class Countdown : MonoBehaviour
 	public AudioSource GoAudio;
 	public GameObject LapTimer;
 	public GameObject CarControls;
+	public AudioSource LevelMusic;
 
 	void Start()
 	{
@@ -20,23 +21,28 @@ public class Countdown : MonoBehaviour
 
 	IEnumerator CountStart()
 	{
-		yield return new WaitForSeconds(0.5f);
+		yield return new WaitForSeconds(0f);
+		LapTimer.SetActive(false);
 		CountDown.GetComponent<Text>().text = "3";
 		GetReady.Play();
 		CountDown.SetActive(true);
+		LapTimer.SetActive(false);
 		yield return new WaitForSeconds(1);
 		CountDown.SetActive(false);
 		CountDown.GetComponent<Text>().text = "2";
 		GetReady.Play();
 		CountDown.SetActive(true);
+		LapTimer.SetActive(false);
 		yield return new WaitForSeconds(1);
 		CountDown.SetActive(false);
 		CountDown.GetComponent<Text>().text = "1";
 		GetReady.Play();
 		CountDown.SetActive(true);
+		LapTimer.SetActive(false);
 		yield return new WaitForSeconds(1);
 		CountDown.SetActive(false);
 		GoAudio.Play();
+		LevelMusic.Play();
 		LapTimer.SetActive(true);
 		CarControls.SetActive(true);
 

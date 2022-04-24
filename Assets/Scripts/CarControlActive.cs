@@ -12,6 +12,7 @@ public class CarControlActive : MonoBehaviour
     {
         CarControl.GetComponent<car_Controller>().enabled = true;
         Dreamcar01.GetComponent<CarAIControl>().enabled = true;
+
     }
 }
 
