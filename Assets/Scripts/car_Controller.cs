@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System;
 
 public class car_Controller : MonoBehaviour
 {
-
+    public Text TxtSpeed;
     private const string HORIZONTAL = "Horizontal";
     private const string VERTICAL = "Vertical";
     private float currentsteerAngle;
@@ -14,6 +15,7 @@ public class car_Controller : MonoBehaviour
 
     private float currentbreakForce;
     private bool isBreaking;
+    public float Speed;
 
     [SerializeField] private float motorForce;
     [SerializeField] private float breakForce;
@@ -31,12 +33,16 @@ public class car_Controller : MonoBehaviour
     [SerializeField] private Transform rearLeftWheelTransform;
     [SerializeField] private Transform rearRightWheelTransform;
 
+    
+
     private void FixedUpdate()
     {
         GetInput();
         HandleMotor();
         HandleSteering();
         UpdateWheels();
+        Speed = GetComponent<Rigidbody>().velocity.magnitude;
+        TxtSpeed.text = "Speed : " + (int)Speed;
     }
 
     private void HandleMotor()

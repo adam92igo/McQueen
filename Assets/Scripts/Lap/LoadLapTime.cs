@@ -22,7 +22,7 @@ public class LoadLapTime : MonoBehaviour
 
 		MinDisplay.GetComponent<Text>().text = "" + MinCount + ":";
 		SecDisplay.GetComponent<Text>().text = "" + SecCount + ".";
-		MilliDisplay.GetComponent<Text>().text = "" + MilliCount;
+		MilliDisplay.GetComponent<Text>().text = "" + (int)MilliCount;
 
 	}
 
