@@ -6,6 +6,9 @@ TagManager:
   tags:
   - DreamCar01
   - Dreamcar01
+  - SpeedBoost
+  - Fire
+  - Car
   layers:
   - Default
   - TransparentFX
