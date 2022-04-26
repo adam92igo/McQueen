@@ -8,14 +8,14 @@ public class SpawnPlayers : MonoBehaviour
 
     public GameObject playerPrefab;
 
-    public float minX;
-    public float maxX;
-    public float minY;
-    public float maxY;
+    public float x;
+    public float y;
+    public float z;
+
     // Start is called before the first frame update
     private void Start()
     {
-        Vector2 randomPosition = new Vector2(Random.Range(minX,maxX), Random.Range(minY, maxY));
+        Vector3 randomPosition = new Vector3(x, y, z);
         PhotonNetwork.Instantiate(playerPrefab.name, randomPosition, Quaternion.identity);
     }
 

@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.UI;
+using Photon.Pun;
 
 #pragma warning disable 649
 namespace UnityStandardAssets.Vehicles.Car
@@ -58,7 +59,8 @@ namespace UnityStandardAssets.Vehicles.Car
         public float Revs { get; private set; }
         public float AccelInput { get; private set; }
         public float Speed;
-        
+
+        PhotonView view;
 
         // Use this for initialization
         private void Start()
@@ -74,6 +76,7 @@ namespace UnityStandardAssets.Vehicles.Car
 
             m_Rigidbody = GetComponent<Rigidbody>();
             m_CurrentTorque = m_FullTorqueOverAllWheels - (m_TractionControl*m_FullTorqueOverAllWheels);
+            view = GetComponent<PhotonView>();
         }
 
 
