@@ -19,7 +19,7 @@ public class RaceFinish : MonoBehaviour
 		MyCar.SetActive(false);
 		CompleteTrig.SetActive(false);
 		//car_Controller.motorForce = 0.0f;
-		MyCar.GetComponent<car_Controller>().enabled = false;
+		MyCar.GetComponent<CarController>().enabled = false;
 		MyCar.GetComponent<CarUserControl>().enabled = false;
 		MyCar.SetActive(true);
 		FinishCam.SetActive(true);

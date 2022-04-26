@@ -10,7 +10,7 @@ public class CarControlActive : MonoBehaviour
     public GameObject Dreamcar01;
     void Start()
     {
-        CarControl.GetComponent<car_Controller>().enabled = true;
+        CarControl.GetComponent<CarController>().enabled = true;
         Dreamcar01.GetComponent<CarAIControl>().enabled = true;
 
     }

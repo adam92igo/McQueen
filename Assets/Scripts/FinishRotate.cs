@@ -7,6 +7,6 @@ public class FinishRotate : MonoBehaviour
 
 	void Update()
 	{
-		transform.Rotate(0, 1, 0, Space.World);
+		transform.Rotate(0, 5, 0, Space.World);
 	}
 }
