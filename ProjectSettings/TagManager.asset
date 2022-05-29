@@ -9,6 +9,8 @@ TagManager:
   - SpeedBoost
   - Fire
   - Car
+  - Bullet
+  - MSol
   layers:
   - Default
   - TransparentFX

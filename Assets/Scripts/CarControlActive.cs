@@ -11,6 +11,7 @@ public class CarControlActive : MonoBehaviour
     void Start()
     {
         CarControl.GetComponent<CarController>().enabled = true;
+        CarControl.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
         Dreamcar01.GetComponent<CarAIControl>().enabled = true;
 
     }
