@@ -11,6 +11,7 @@ TagManager:
   - Car
   - Bullet
   - MSol
+  - Boosts
   layers:
   - Default
   - TransparentFX
