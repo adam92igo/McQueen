@@ -46,7 +46,19 @@ public class Countdown : MonoBehaviour
 		LapTimer.SetActive(true);
 		CarControls.SetActive(true);
 
+		if (Input.GetKeyDown(KeyCode.Escape))
+		{
+			if (LevelMusic.mute)
+			{
+				LevelMusic.mute = false;
+			}
+			else
+			{
+				LevelMusic.mute = true;
+			}
+		}
 	}
+
 
 
 }
