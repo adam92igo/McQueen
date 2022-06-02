@@ -19,9 +19,9 @@ namespace UnityStandardAssets.Vehicles.Car
         KPH
     }
 
-    public class CarController : NetworkBehaviour
+    public class CarController : MonoBehaviour
     {
-        public Text TxtSpeed;
+        public Text TxtSpeed; 
         [SerializeField] private CarDriveType m_CarDriveType = CarDriveType.FourWheelDrive;
         [SerializeField] private WheelCollider[] m_WheelColliders = new WheelCollider[4];
         [SerializeField] private GameObject[] m_WheelMeshes = new GameObject[4];
@@ -140,8 +140,8 @@ namespace UnityStandardAssets.Vehicles.Car
 
         public void Move(float steering, float accel, float footbrake, float handbrake)
         {
-            if (this.isLocalPlayer)
-            {
+           
+            
                 for (int i = 0; i < 4; i++)
                 {
                     Quaternion quat;
@@ -183,7 +183,7 @@ namespace UnityStandardAssets.Vehicles.Car
                 AddDownForce();
                 CheckForWheelSpin();
                 TractionControl();
-            }
+          
            
         }
 
