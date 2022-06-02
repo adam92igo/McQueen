@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.48097742, g: 0.5288714, b: 0.5816308, a: 1}
+  m_IndirectSpecularColor: {r: 0.4809568, g: 0.5288441, b: 0.5816324, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1390,7 +1390,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &281998692
 Transform:
   m_ObjectHideFlags: 0
@@ -9704,8 +9704,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 099b8c11a21a246ab8cd3db9e590fddb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CarControl: {fileID: 0}
-  Dreamcar01: {fileID: 0}
+  CarControl: {fileID: 1971494505264587830, guid: dd7304efdb7a641af9777716b07b1966, type: 3}
+  Dreamcar01: {fileID: 1895147630}
 --- !u!1 &1917480357 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 48af49ba4ae664439997ff616f8d141d, type: 3}
@@ -9918,7 +9918,7 @@ PrefabInstance:
       objectReference: {fileID: 1663392840}
     - target: {fileID: 11400022, guid: 0fb4610dba67fc24cb2a6674fb155fc1, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11400024, guid: 0fb4610dba67fc24cb2a6674fb155fc1, type: 3}
       propertyPath: target
