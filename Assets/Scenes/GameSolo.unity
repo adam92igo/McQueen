@@ -1221,6 +1221,11 @@ Transform:
   m_Father: {fileID: 1297522318}
   m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &179680083 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1971494506312098215, guid: 8a5bf32e191414c238584bb1b2c389e6, type: 3}
+  m_PrefabInstance: {fileID: 399581770}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &187136801 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400064, guid: 0fb4610dba67fc24cb2a6674fb155fc1, type: 3}
@@ -3277,12 +3282,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df368ae6607614b59bd31599268f00cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MyCar: {fileID: 0}
-  FinishCam: {fileID: 0}
-  ViewModes: {fileID: 0}
-  LevelMusic: {fileID: 0}
+  MyCar: {fileID: 1526239005}
+  FinishCam: {fileID: 752348773}
+  ViewModes: {fileID: 179680083}
+  LevelMusic: {fileID: 1539635829}
   CompleteTrig: {fileID: 2104456550}
-  FinishMusic: {fileID: 0}
+  FinishMusic: {fileID: 2047331737}
 --- !u!65 &585376696
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4121,6 +4126,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &752348773 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1971494505515944961, guid: 8a5bf32e191414c238584bb1b2c389e6, type: 3}
+  m_PrefabInstance: {fileID: 399581770}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &801218966
 GameObject:
   m_ObjectHideFlags: 0
@@ -8128,6 +8138,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dreamcar01: {fileID: 1895147630}
   CarControl: {fileID: 1526239005}
+--- !u!1 &1539635829 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1971494506315957421, guid: 8a5bf32e191414c238584bb1b2c389e6, type: 3}
+  m_PrefabInstance: {fileID: 399581770}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1543270417
 GameObject:
   m_ObjectHideFlags: 0
@@ -10194,6 +10209,11 @@ Transform:
   m_Father: {fileID: 1297522318}
   m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &2047331737 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1971494506705653751, guid: 8a5bf32e191414c238584bb1b2c389e6, type: 3}
+  m_PrefabInstance: {fileID: 399581770}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2063072931
 GameObject:
   m_ObjectHideFlags: 0
