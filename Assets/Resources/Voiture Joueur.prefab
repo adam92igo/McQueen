@@ -6115,10 +6115,10 @@ MonoBehaviour:
   m_FullTorqueOverAllWheels: 3500
   m_ReverseTorque: 1000
   m_MaxHandbrakeTorque: 100000000
-  m_Downforce: 30
+  m_Downforce: 300
   m_SpeedType: 1
   m_RevRangeBoundary: 1
-  m_SlipLimit: 0.2
+  m_SlipLimit: 1.7
   m_BrakeTorque: 100000
   Speed: 0
 --- !u!114 &1971494505264587784
