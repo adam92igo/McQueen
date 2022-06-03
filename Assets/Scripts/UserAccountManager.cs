@@ -8,7 +8,7 @@ public class UserAccountManager : MonoBehaviour
 {
     public static UserAccountManager instance;
     public static string LoggedInUsername;
-    public string lobbySceneName = "Lobby";
+    public string lobbySceneName = "MainMenu";
     private void Awake()
     {
         if (instance != null)
