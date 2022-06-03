@@ -7,12 +7,17 @@ using UnityStandardAssets.Vehicles.Car;
 public class CarControlActive : MonoBehaviour
 {
 
-    public GameObject CarControl;
     public GameObject Dreamcar01;
     void Start()
     {
-        CarControl.GetComponent<Countdown>().enabled = true;
-        CarControl.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+        GameObject[] go = new GameObject[GameObject.FindGameObjectsWithTag("Player").Length];
+        go = GameObject.FindGameObjectsWithTag("Player");
+        foreach (GameObject c in go)
+        {
+            c.GetComponent<CarController>().enabled = true;
+            c.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+
+        }
 
 
         Dreamcar01.GetComponent<CarAIControl>().enabled = true;

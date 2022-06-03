@@ -8260,7 +8260,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 099b8c11a21a246ab8cd3db9e590fddb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CarControl: {fileID: 1971494505264587830, guid: dd7304efdb7a641af9777716b07b1966, type: 3}
   Dreamcar01: {fileID: 1895147630}
 --- !u!4 &1531737622
 Transform:
@@ -9732,7 +9731,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 099b8c11a21a246ab8cd3db9e590fddb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CarControl: {fileID: 1971494505264587830, guid: dd7304efdb7a641af9777716b07b1966, type: 3}
   Dreamcar01: {fileID: 1895147630}
 --- !u!1 &1917480357 stripped
 GameObject:
@@ -11795,6 +11793,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3298136835570467753, guid: 881c3103f51a44e56b35930762e1f10f, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8724147922646172887, guid: 881c3103f51a44e56b35930762e1f10f, type: 3}
       propertyPath: m_Name
       value: GoAudio
@@ -11812,6 +11814,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2142169735}
     m_Modifications:
+    - target: {fileID: 5037484157216834137, guid: 6fa128afa48304304bee296572688652, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5419717036375272457, guid: 6fa128afa48304304bee296572688652, type: 3}
       propertyPath: m_RootOrder
       value: 0
