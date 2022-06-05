@@ -12,6 +12,7 @@ TagManager:
   - Bullet
   - MSol
   - finish
+  - Boost
   layers:
   - Default
   - TransparentFX
