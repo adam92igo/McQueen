@@ -81,7 +81,7 @@ namespace UnityStandardAssets.Vehicles.Car
         private void Update()
         {
             Speed = GetComponent<Rigidbody>().velocity.magnitude;
-            TxtSpeed.text = "Speed :" + (int)CurrentSpeed;
+            TxtSpeed.text = "Speed :" + (int)Speed;
         }
 
         private void GearChanging()
