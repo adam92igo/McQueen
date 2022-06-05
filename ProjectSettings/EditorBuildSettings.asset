@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TrackerSelect.unity
     guid: e6d1a1add7cb245f2a5d5b592a8a5eb7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Lobby.unity
     guid: 98fcd9d4eeeac4cacb9f114c30381315
   - enabled: 1
