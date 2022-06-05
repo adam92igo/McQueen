@@ -35,7 +35,7 @@ namespace UnityStandardAssets.Vehicles.Car
         [SerializeField] private float m_MaxHandbrakeTorque;
         [SerializeField] private float m_Downforce = 100f;
         [SerializeField] private SpeedType m_SpeedType;
-        [SerializeField] public static float m_Topspeed = 100;
+        [SerializeField] public static float m_Topspeed = 200;
         [SerializeField] private static int NoOfGears = 5;
         [SerializeField] private float m_RevRangeBoundary = 1f;
         [SerializeField] private float m_SlipLimit;
@@ -81,7 +81,7 @@ namespace UnityStandardAssets.Vehicles.Car
         private void Update()
         {
             Speed = GetComponent<Rigidbody>().velocity.magnitude;
-            TxtSpeed.text = "Speed :" + (int)Speed;
+            TxtSpeed.text = "Speed :" + (int)CurrentSpeed;
         }
 
         private void GearChanging()

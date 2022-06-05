@@ -30,6 +30,10 @@ public class ButtonOption : MonoBehaviour
 	}
 	public void PlayGameSolo()
     {
+		SceneManager.LoadScene(4);
+    }
+	public void CreditScene()
+    {
 		SceneManager.LoadScene(5);
     }
 }  
