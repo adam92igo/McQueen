@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c0e4b7c1-34da-4491-a763-a792d648f7ea" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.McQueen/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.McQueen/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pausemenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pausemenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Countdown.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Countdown.cs" afterDir="false" />
-    </list>
+    <list default="true" id="c0e4b7c1-34da-4491-a763-a792d648f7ea" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,7 +94,7 @@
       <workItem from="1654339659526" duration="3556000" />
       <workItem from="1654368137404" duration="231000" />
       <workItem from="1654449106667" duration="1506000" />
-      <workItem from="1654519976836" duration="544000" />
+      <workItem from="1654519976836" duration="726000" />
     </task>
     <servers />
   </component>
