@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.UI;
-using Photon.Pun;
+using Mirror;
 
 #pragma warning disable 649
 namespace UnityStandardAssets.Vehicles.Car
@@ -21,7 +21,7 @@ namespace UnityStandardAssets.Vehicles.Car
 
     public class CarController : MonoBehaviour
     {
-        public Text TxtSpeed;
+        public Text TxtSpeed; 
         [SerializeField] private CarDriveType m_CarDriveType = CarDriveType.FourWheelDrive;
         [SerializeField] private WheelCollider[] m_WheelColliders = new WheelCollider[4];
         [SerializeField] private GameObject[] m_WheelMeshes = new GameObject[4];
@@ -35,7 +35,7 @@ namespace UnityStandardAssets.Vehicles.Car
         [SerializeField] private float m_MaxHandbrakeTorque;
         [SerializeField] private float m_Downforce = 100f;
         [SerializeField] private SpeedType m_SpeedType;
-        [SerializeField] public static float m_Topspeed = 100;
+        [SerializeField] public static float m_Topspeed = 200;
         [SerializeField] private static int NoOfGears = 5;
         [SerializeField] private float m_RevRangeBoundary = 1f;
         [SerializeField] private float m_SlipLimit;
@@ -54,13 +54,12 @@ namespace UnityStandardAssets.Vehicles.Car
         public bool Skidding { get; private set; }
         public float BrakeInput { get; private set; }
         public float CurrentSteerAngle{ get { return m_SteerAngle; }}
-        public float CurrentSpeed{ get { return m_Rigidbody.velocity.magnitude*2.23693629f; }}
+        public float CurrentSpeed{ get { return m_Rigidbody.velocity.magnitude*3.6f; }}
         public float MaxSpeed{get { return m_Topspeed; }}
         public float Revs { get; private set; }
         public float AccelInput { get; private set; }
         public float Speed;
 
-        PhotonView view;
 
         // Use this for initialization
         private void Start()
@@ -76,14 +75,13 @@ namespace UnityStandardAssets.Vehicles.Car
 
             m_Rigidbody = GetComponent<Rigidbody>();
             m_CurrentTorque = m_FullTorqueOverAllWheels - (m_TractionControl*m_FullTorqueOverAllWheels);
-            view = GetComponent<PhotonView>();
         }
 
 
         private void Update()
         {
             Speed = GetComponent<Rigidbody>().velocity.magnitude;
-            TxtSpeed.text = "Speed : " + (int)Speed;
+            TxtSpeed.text = "Speed :" + (int)CurrentSpeed;
         }
 
         private void GearChanging()
@@ -142,47 +140,51 @@ namespace UnityStandardAssets.Vehicles.Car
 
         public void Move(float steering, float accel, float footbrake, float handbrake)
         {
-            for (int i = 0; i < 4; i++)
-            {
-                Quaternion quat;
-                Vector3 position;
-                m_WheelColliders[i].GetWorldPose(out position, out quat);
-                m_WheelMeshes[i].transform.position = position;
-                m_WheelMeshes[i].transform.rotation = quat;
-            }
+           
+            
+                for (int i = 0; i < 4; i++)
+                {
+                    Quaternion quat;
+                    Vector3 position;
+                    m_WheelColliders[i].GetWorldPose(out position, out quat);
+                    m_WheelMeshes[i].transform.position = position;
+                    m_WheelMeshes[i].transform.rotation = quat;
+                }
 
-            //clamp input values
-            steering = Mathf.Clamp(steering, -1, 1);
-            AccelInput = accel = Mathf.Clamp(accel, 0, 1);
-            BrakeInput = footbrake = -1*Mathf.Clamp(footbrake, -1, 0);
-            handbrake = Mathf.Clamp(handbrake, 0, 1);
+                //clamp input values
+                steering = Mathf.Clamp(steering, -1, 1);
+                AccelInput = accel = Mathf.Clamp(accel, 0, 1);
+                BrakeInput = footbrake = -1 * Mathf.Clamp(footbrake, -1, 0);
+                handbrake = Mathf.Clamp(handbrake, 0, 1);
 
-            //Set the steer on the front wheels.
-            //Assuming that wheels 0 and 1 are the front wheels.
-            m_SteerAngle = steering*m_MaximumSteerAngle;
-            m_WheelColliders[0].steerAngle = m_SteerAngle;
-            m_WheelColliders[1].steerAngle = m_SteerAngle;
+                //Set the steer on the front wheels.
+                //Assuming that wheels 0 and 1 are the front wheels.
+                m_SteerAngle = steering * m_MaximumSteerAngle;
+                m_WheelColliders[0].steerAngle = m_SteerAngle;
+                m_WheelColliders[1].steerAngle = m_SteerAngle;
 
-            SteerHelper();
-            ApplyDrive(accel, footbrake);
-            CapSpeed();
+                SteerHelper();
+                ApplyDrive(accel, footbrake);
+                CapSpeed();
 
-            //Set the handbrake.
-            //Assuming that wheels 2 and 3 are the rear wheels.
-            if (handbrake > 0f)
-            {
-                var hbTorque = handbrake*m_MaxHandbrakeTorque;
-                m_WheelColliders[2].brakeTorque = hbTorque;
-                m_WheelColliders[3].brakeTorque = hbTorque;
-            }
+                //Set the handbrake.
+                //Assuming that wheels 2 and 3 are the rear wheels.
+                if (handbrake > 0f)
+                {
+                    var hbTorque = handbrake * m_MaxHandbrakeTorque;
+                    m_WheelColliders[2].brakeTorque = hbTorque;
+                    m_WheelColliders[3].brakeTorque = hbTorque;
+                }
 
 
-            CalculateRevs();
-            GearChanging();
+                CalculateRevs();
+                GearChanging();
 
-            AddDownForce();
-            CheckForWheelSpin();
-            TractionControl();
+                AddDownForce();
+                CheckForWheelSpin();
+                TractionControl();
+          
+           
         }
 
 

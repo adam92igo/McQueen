@@ -9,6 +9,11 @@ TagManager:
   - SpeedBoost
   - Fire
   - Car
+  - Bullet
+  - MSol
+  - finish
+  - Boost
+  - CarPos
   layers:
   - Default
   - TransparentFX

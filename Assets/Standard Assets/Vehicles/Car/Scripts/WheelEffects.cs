@@ -39,6 +39,7 @@ namespace UnityStandardAssets.Vehicles.Car
             {
                 skidTrailsDetachedParent = new GameObject("Skid Trails - Detached").transform;
             }
+        
         }
 
 
@@ -90,5 +91,6 @@ namespace UnityStandardAssets.Vehicles.Car
             m_SkidTrail.parent = skidTrailsDetachedParent;
             Destroy(m_SkidTrail.gameObject, 10);
         }
+       
     }
 }

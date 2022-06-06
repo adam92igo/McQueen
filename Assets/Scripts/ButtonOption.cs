@@ -34,5 +34,12 @@ public class ButtonOption : MonoBehaviour
 	{
 		Application.Quit();
 	}
-
+	public void PlayGameSolo()
+    {
+		SceneManager.LoadScene(5);
+    }
+	public void CreditScene()
+    {
+		SceneManager.LoadScene(6);
+    }
 }  

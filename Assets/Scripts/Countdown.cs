@@ -14,9 +14,20 @@ public class Countdown : MonoBehaviour
 	public GameObject CarControls;
 	public AudioSource LevelMusic;
 
-	void Start()
+
+    private void Start()
+    {
+		LapTimer.SetActive(false);
+		LapTimer.SetActive(false);
+		CarControls.SetActive(false);
+	}
+    void Update()
 	{
-		StartCoroutine(CountStart());
+		if (Input.GetKeyDown(KeyCode.Space))
+        {
+            StartCoroutine(CountStart());
+        }
+		
 	}
 
 	IEnumerator CountStart()
@@ -27,18 +38,21 @@ public class Countdown : MonoBehaviour
 		GetReady.Play();
 		CountDown.SetActive(true);
 		LapTimer.SetActive(false);
+		CarControls.SetActive(false);
 		yield return new WaitForSeconds(1);
 		CountDown.SetActive(false);
 		CountDown.GetComponent<Text>().text = "2";
 		GetReady.Play();
 		CountDown.SetActive(true);
 		LapTimer.SetActive(false);
+		CarControls.SetActive(false);
 		yield return new WaitForSeconds(1);
 		CountDown.SetActive(false);
 		CountDown.GetComponent<Text>().text = "1";
 		GetReady.Play();
 		CountDown.SetActive(true);
 		LapTimer.SetActive(false);
+		CarControls.SetActive(false);
 		yield return new WaitForSeconds(1);
 		CountDown.SetActive(false);
 		GoAudio.Play();
