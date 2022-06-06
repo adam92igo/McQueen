@@ -2,21 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.Vehicles.Car;
+using UnityEngine.SceneManagement;
 
 public class RaceFinishMulti : MonoBehaviour
 {
 	public GameObject LapPanel;
-	public GameObject Panel;
 	public GameObject MiniMap;
 	public GameObject LevelMusic;
 	public GameObject CompleteTrig;
 	public AudioSource FinishMusic;
+	public GameObject Dream;
+	public GameObject GetReady;
+	public GameObject Go;
+	public GameObject Finish;
+	public GameObject Panel;
 
 	void OnTriggerEnter()
 	{
 		LapPanel.SetActive(false);
+		GetReady.SetActive(false);
+		Go.SetActive(false);
 		Panel.SetActive(false);
 		MiniMap.SetActive(false);
+		Dream.GetComponent<CarAIControl>().enabled = false;
 		GameObject[] go = new GameObject[GameObject.FindGameObjectsWithTag("Player").Length];
 		go = GameObject.FindGameObjectsWithTag("Player");
 		foreach (GameObject c in go)
@@ -25,14 +33,21 @@ public class RaceFinishMulti : MonoBehaviour
 			c.GetComponent<CarController>().enabled = false;
 			c.GetComponent<CarUserControl>().enabled = false;
 			c.SetActive(true);
-			c.GetComponent<AudioSource>().enabled = false;
 
 		}
 
 		CompleteTrig.SetActive(false);
 		//car_Controller.motorForce = 0.0f;
 		LevelMusic.SetActive(false);
-		FinishMusic.Play();
+		StartCoroutine(Wa());
+		
+
 	}
+	private IEnumerator Wa()
+    {
+		yield return new WaitForSeconds(20);
+		SceneManager.LoadScene(6);
+	}
+   
 
 }
