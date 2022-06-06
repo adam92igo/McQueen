@@ -13,6 +13,7 @@ TagManager:
   - MSol
   - finish
   - Boost
+  - CarPos
   layers:
   - Default
   - TransparentFX
