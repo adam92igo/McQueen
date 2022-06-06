@@ -6,7 +6,6 @@ public class Pausemenu : MonoBehaviour
 {
     public static bool gameIsPaused = false;
     public GameObject pauseMenuUI;
-
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -19,7 +18,8 @@ public class Pausemenu : MonoBehaviour
             {
                 Paused();
             }
-                
+
+            Debug.Log("Hello PauseMenu");
         }
     }
 
@@ -34,7 +34,7 @@ public class Pausemenu : MonoBehaviour
     {
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1;
-        gameIsPaused = false;
+        gameIsPaused = false; 
     }
 
     public void LoadMainMenu()

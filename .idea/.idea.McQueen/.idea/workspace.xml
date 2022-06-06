@@ -6,7 +6,6 @@
       <change beforePath="$PROJECT_DIR$/Assets/Pausemenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pausemenu.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Countdown.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Countdown.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +15,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MusicManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../McQueen3/Assets/Scripts/Menu.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Pausemenu.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -84,6 +92,14 @@
       <workItem from="1654016500257" duration="987000" />
       <workItem from="1654079213305" duration="223000" />
       <workItem from="1654081035300" duration="891000" />
+      <workItem from="1654111639697" duration="646000" />
+      <workItem from="1654165810764" duration="4052000" />
+      <workItem from="1654251063970" duration="512000" />
+      <workItem from="1654251695565" duration="1591000" />
+      <workItem from="1654339659526" duration="3556000" />
+      <workItem from="1654368137404" duration="231000" />
+      <workItem from="1654449106667" duration="1506000" />
+      <workItem from="1654519976836" duration="544000" />
     </task>
     <servers />
   </component>

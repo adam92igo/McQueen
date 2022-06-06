@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,7 +18,6 @@ public class Countdown : MonoBehaviour
 	{
 		StartCoroutine(CountStart());
 	}
-
 
 	IEnumerator CountStart()
 	{
@@ -45,20 +45,5 @@ public class Countdown : MonoBehaviour
 		LevelMusic.Play();
 		LapTimer.SetActive(true);
 		CarControls.SetActive(true);
-
-		if (Input.GetKeyDown(KeyCode.Escape))
-		{
-			if (LevelMusic.mute)
-			{
-				LevelMusic.mute = false;
-			}
-			else
-			{
-				LevelMusic.mute = true;
-			}
-		}
 	}
-
-
-
 }
