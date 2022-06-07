@@ -6119,7 +6119,6 @@ GameObject:
   - component: {fileID: 1971494505264587785}
   - component: {fileID: 1971494505264587790}
   - component: {fileID: 1971494505264587784}
-  - component: {fileID: 1971494505264587791}
   - component: {fileID: 3088854881944606427}
   - component: {fileID: 957278269755763421}
   - component: {fileID: 7108278523595696199}
@@ -6230,30 +6229,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96468c245ae8e0d4f8f1c7a7b8b0542e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1971494505264587791
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1971494505264587830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20fa55eb64c5cea4aa3c71ae19c434bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  engineSoundStyle: 1
-  lowAccelClip: {fileID: 8300000, guid: c4d8928c75c21af43998193f0f038429, type: 3}
-  lowDecelClip: {fileID: 8300000, guid: c4d8928c75c21af43998193f0f038429, type: 3}
-  highAccelClip: {fileID: 8300000, guid: 03e3bd08a6e70684dbe299a3e185fdd2, type: 3}
-  highDecelClip: {fileID: 8300000, guid: 03bf91d88fce91c41995d27de63cc967, type: 3}
-  pitchMultiplier: 0.8
-  lowPitchMin: 1
-  lowPitchMax: 5
-  highPitchMultiplier: 0.25
-  maxRolloffDistance: 500
-  dopplerLevel: 1
-  useDoppler: 1
 --- !u!114 &3088854881944606427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6338,7 +6313,7 @@ MonoBehaviour:
   componentstodisable:
   - {fileID: 1971494505264587790}
   - {fileID: 1971494505264587784}
-  - {fileID: 1971494505264587791}
+  - {fileID: 0}
   - {fileID: 1971494505794230072}
   - {fileID: 1971494506888023620}
   - {fileID: 1971494505609804666}
