@@ -46,7 +46,7 @@ public class RaceFinishMulti : MonoBehaviour
 	}
 	private IEnumerator Wa()
     {
-		yield return new WaitForSeconds(20);
+		yield return new WaitForSeconds(12);
 		SceneManager.LoadScene(6);
 	}
    
