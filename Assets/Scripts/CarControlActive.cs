@@ -8,7 +8,6 @@ public class CarControlActive : MonoBehaviour
 {
 
     public GameObject Dreamcar01;
-    public GameObject DreamCar02;
     void Start()
     {
         GameObject[] go = new GameObject[GameObject.FindGameObjectsWithTag("Player").Length];
@@ -22,8 +21,7 @@ public class CarControlActive : MonoBehaviour
 
 
         Dreamcar01.GetComponent<CarAIControl>().enabled = true;
-        DreamCar02.GetComponent<CarAIControl>().enabled = true;
-        DreamCar02.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+        Dreamcar01.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
 
 
     }
