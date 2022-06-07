@@ -4,19 +4,23 @@ using UnityEngine;
 
 public class MusicManager : MonoBehaviour
 {
-    public AudioSource Music;
+    public AudioSource music;
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (Music.isPlaying)
+            Debug.Log(music);
+            Debug.Log("Hello word");
+            if (music.isPlaying)
             {
-                Music.Pause();
+                Debug.Log("Hello France");
+                music.Pause();
             }
             else
             {
-                Music.UnPause();
+                Debug.Log("Hello Paris");
+                music.UnPause();
             }
             
         }
