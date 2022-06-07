@@ -2050,6 +2050,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7726504302857490069, guid: 04141cd4439724ed39470067b8d9cf05, type: 3}
+      propertyPath: networkAddress
+      value: QuatresMousquetaires
+      objectReference: {fileID: 0}
+    - target: {fileID: 7726504302857490069, guid: 04141cd4439724ed39470067b8d9cf05, type: 3}
       propertyPath: autoCreatePlayer
       value: 1
       objectReference: {fileID: 0}
