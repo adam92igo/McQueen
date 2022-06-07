@@ -25,6 +25,7 @@ public class RaceFinishMulti : MonoBehaviour
 		Panel.SetActive(false);
 		MiniMap.SetActive(false);
 		Dream.GetComponent<CarAIControl>().enabled = false;
+		Finish.SetActive(true);
 		GameObject[] go = new GameObject[GameObject.FindGameObjectsWithTag("Player").Length];
 		go = GameObject.FindGameObjectsWithTag("Player");
 		foreach (GameObject c in go)
