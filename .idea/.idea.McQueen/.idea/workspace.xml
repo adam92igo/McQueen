@@ -4,7 +4,9 @@
     <list default="true" id="c0e4b7c1-34da-4491-a763-a792d648f7ea" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.McQueen/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.McQueen/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Pausemenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pausemenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MusicManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MusicManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +103,7 @@
       <workItem from="1654521505218" duration="1021000" />
       <workItem from="1654527571976" duration="35000" />
       <workItem from="1654527717227" duration="366000" />
+      <workItem from="1654613380070" duration="85000" />
     </task>
     <servers />
   </component>

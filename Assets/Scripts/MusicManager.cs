@@ -10,16 +10,12 @@ public class MusicManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Debug.Log("Hello France");
-
             if (Music.isPlaying)
             {
-                Debug.Log("Hello Word");
                 Music.Pause();
             }
             else
             {
-                Debug.Log("Hello Paris");
                 Music.UnPause();
             }
             
